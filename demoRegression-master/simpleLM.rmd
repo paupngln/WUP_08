@@ -55,4 +55,15 @@ summary.lm(simp)
 
 Compared to the other 2 models above, respectively, LENGTH and NECK, and LENGTH and CHEST. This model seems to has similarities with the first model in regards to its residual standard error and adjusted r sq value. This model are about the same and WEIGHT did not give us a significant change to our values. 
 
+```{r}
+simp <- lm(LENGTH~HEADLEN,data=bears)
+plot(LENGTH~HEADLEN,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+
+This model seems to be much better than the previous once since the residual standard error is smaller and the adjusted r sq is higher. 
+
+
+
 
